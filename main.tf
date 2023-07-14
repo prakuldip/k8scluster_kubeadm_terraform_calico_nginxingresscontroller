@@ -395,7 +395,7 @@ resource "null_resource" "deploy_nginx_controller" {
 }
 
 # resource "aws_lb_target_group_attachment" "test" {
-#   target_group_arn = "arn:aws:elasticloadbalancing:us-east-2:100472621715:targetgroup/cdex-tg-alb/b039f33074fb5d45"
+#   target_group_arn = "<TARGET_GROUP_ARN>"
 #   target_id        = aws_instance.master.private_ip
 #   port             = 32080
 #   depends_on       = [null_resource.deploy_nginx_controller]
